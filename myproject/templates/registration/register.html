@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}
+Tweet : Register yourself
+{% endblock %}
+
+{% block content %}
+<br>
+<h2>Register Form</h2>
+<br>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn btn-primary">Register</button>
+</form>
+
+{% endblock %}
